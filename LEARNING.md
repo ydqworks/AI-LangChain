@@ -19,13 +19,13 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 0 部分 |
-| **当前步骤** | 0.1 |
-| **开始日期** | _（自行填写）_ |
-| **最近更新** | _（自行填写）_ |
+| **当前步骤** | 0.4 |
+| **开始日期** | 2026-07-06 |
+| **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 状态 |
 |------|------|------|
-| 0 | 准备与认知 | ⬜ 未开始 |
+| 0 | 准备与认知 | 🟨 进行中 |
 | 1 | Monitor 可观测性 | ⬜ 未开始 |
 | 2 | LangChain 基础 | ⬜ 未开始 |
 | 3 | LangGraph 编排 | ⬜ 未开始 |
@@ -75,17 +75,17 @@
 
 ### 学习步骤
 
-- [ ] **0.1** 阅读官网首页，理解五大模块  
+- [x] **0.1** 阅读官网首页，理解五大模块  
   - 文档：[docs.langchain.com](https://docs.langchain.com/)  
   - 自检：能说出 Build、Monitor、Test、Deploy、Govern 各做什么
 
-- [ ] **0.2** 阅读 Build Overview，理解三层框架如何选型  
+- [x] **0.2** 阅读 Build Overview，理解三层框架如何选型  
   - 文档：[Build Overview](https://docs.langchain.com/build-overview)  
   - 自检：能解释 LangChain / LangGraph / Deep Agents 的区别与适用场景
 
-- [ ] **0.3** 理解技术栈分层（画图或笔记）  
+- [x] **0.3** 理解技术栈分层（画图或笔记）  
   - 内容：应用 → Build 栈 → LangSmith 平台  
-  - 产出：一张结构图或 10 行以内笔记
+  - 产出：[notes/0.3-tech-stack-layers.md](./notes/0.3-tech-stack-layers.md)
 
 - [ ] **0.4** 检查本地开发环境  
   - 要求：Node.js **22+**（`node -v`）  
@@ -272,6 +272,8 @@
 
 ```
 AI-LangChain/
+├── notes/
+│   └── 0.3-tech-stack-layers.md  # 第 0 部分
 ├── src/
 │   ├── 01-tracing/       # 第 1 部分
 │   ├── 02-langchain/     # 第 2 部分
@@ -303,6 +305,6 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**从第 0 部分 · 步骤 0.1 开始**：打开 [docs.langchain.com](https://docs.langchain.com/)，阅读首页，理解 Build / Monitor / Test / Deploy / Govern。
+**第 0 部分 · 步骤 0.4**：检查本地开发环境（`node -v`、`npm install`、识别 `package.json` 依赖）。
 
-学完 0.1 后勾选 `- [ ]`，继续 0.2。第 0 部分全部勾选完成后，再进入第 1 部分写代码。
+第 0 部分全部勾选完成后，再进入第 1 部分写代码。

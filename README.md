@@ -11,12 +11,12 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 0 部分 · 准备与认知 |
-| **当前步骤** | 0.1 |
+| **当前步骤** | 0.4 |
 | **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 状态 | 说明 |
 |:----:|------|:----:|------|
-| 0 | 准备与认知 | 🟨 进行中 | 环境已初步搭建，文档学习未勾选 |
+| 0 | 准备与认知 | 🟨 进行中 | 0.1–0.3 已完成，笔记见 `notes/` |
 | 1 | Monitor 可观测性 | ⬜ 未开始 | Tracing、LangSmith |
 | 2 | LangChain 基础 | ⬜ 未开始 | `createAgent`、Tools、Middleware |
 | 3 | LangGraph 编排 | ⬜ 未开始 | StateGraph、Checkpoint、HITL |
@@ -101,6 +101,8 @@ cp .env.example .env
 
 ```
 AI-LangChain/
+├── notes/                  # 第 0 部分笔记
+│   └── 0.3-tech-stack-layers.md
 ├── src/                    # 学习示例（随进度创建）
 │   ├── 01-tracing/         # 第 1 部分
 │   ├── 02-langchain/       # 第 2 部分
@@ -141,4 +143,4 @@ AI-LangChain/
 
 ## 下一步
 
-**第 0 部分 · 0.1**：阅读 [docs.langchain.com](https://docs.langchain.com/) 首页，理解 Build、Monitor、Test、Deploy、Govern 五大模块，然后在 [LEARNING.md](./LEARNING.md) 勾选完成。
+**第 0 部分 · 0.4**：检查本地开发环境（Node.js 22+、`npm install`、识别 `package.json` 依赖），详见 [LEARNING.md](./LEARNING.md)。
