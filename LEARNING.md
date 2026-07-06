@@ -134,7 +134,7 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 
 - [x] **1.1** 安装开发与工具依赖  
   ```bash
-  npm i zod
+  npm i zod @langchain/google-genai
   npm i -D typescript tsx @types/node
   ```
   - 自检：能识别 `package.json` 新增项
@@ -143,19 +143,20 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
   ```
   LANGSMITH_TRACING=true
   LANGSMITH_API_KEY=lsv2_pt_...
-  OPENAI_API_KEY=sk-...
+  GOOGLE_API_KEY=...          # https://aistudio.google.com/apikey
   ```
 
 - [ ] **1.3** 阅读 Overview，理解 `createAgent` = Model + Tools + Middleware
 
-- [ ] **1.4** 完成 Quickstart：天气 Agent  
+- [ ] **1.4** 完成 Quickstart：天气 Agent（**Gemini**）  
   - 文档：[Quickstart](https://docs.langchain.com/oss/javascript/langchain/quickstart)  
+  - 模型：`google-genai:gemini-2.5-flash-lite`  
   - 产出：`src/01-langchain/01-weather-agent.ts`
 
 - [ ] **1.5** 编写自定义 Tool（`zod`）  
   - 产出：`src/01-langchain/02-custom-tools.ts`
 
-- [ ] **1.6** 接入 `@langchain/openai` 或 `@langchain/anthropic`
+- [ ] **1.6** 了解其他模型集成（选学：`@langchain/openai`、`@langchain/anthropic`）
 
 - [ ] **1.7** 学习 Middleware（重试、guardrails）  
   - 产出：`src/01-langchain/03-middleware.ts`
@@ -321,7 +322,7 @@ AI-LangChain/
 | 部分 | 命令 |
 |------|------|
 | 0 | `npm install`（已有 langchain 相关包即可） |
-| 1 | `npm i zod` + `npm i -D typescript tsx @types/node` |
+| 1 | `npm i zod @langchain/google-genai` + `npm i -D typescript tsx @types/node` |
 | 2 | `npm i @langchain/langgraph` |
 | 3 | `npm i deepagents` |
 | 5 | `npm i -D @langchain/langgraph-cli`（按需） |
@@ -331,4 +332,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.2**：确认 `.env` 含 `OPENAI_API_KEY`，阅读 Overview 理解 `createAgent`。
+**第 1 部分 · 步骤 1.2**：在 `.env` 填入 `GOOGLE_API_KEY`（[aistudio.google.com/apikey](https://aistudio.google.com/apikey)）。

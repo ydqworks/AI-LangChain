@@ -63,6 +63,7 @@
 | Node.js 22+ | ✅ v22.14.0 |
 | 项目依赖 `npm install` | ✅ 已安装 |
 | LangSmith 账号 & API Key | ✅ 已配置 |
+| Google Gemini API Key | 待填入 `.env` 的 `GOOGLE_API_KEY` |
 | `.env` 配置 | ✅ 已创建（勿提交 Git） |
 | LangSmith MCP（Cursor） | ✅ 已连接 |
 | 示例代码 `src/` | 待创建（第 1 部分起） |
@@ -90,7 +91,8 @@ npm install
 cp .env.example .env
 ```
 
-编辑 `.env`，填入 LangSmith 与模型 API Key（**勿提交 Git**）。
+编辑 `.env`，填入 LangSmith 与 **Google Gemini** API Key（**勿提交 Git**）。  
+Gemini Key 获取：[aistudio.google.com/apikey](https://aistudio.google.com/apikey)
 
 ### 4. 开始学习
 
@@ -124,9 +126,11 @@ AI-LangChain/
 | 包 | 用途 |
 |----|------|
 | `@langchain/core` | 核心抽象 |
-| `@langchain/openai` | OpenAI 模型集成 |
-| `@langchain/anthropic` | Anthropic 模型集成 |
+| `@langchain/google-genai` | **Google Gemini 模型（默认）** |
 | `langchain` | LangChain Agent 框架 |
+| `zod` | Tool 参数 schema |
+| `@langchain/openai` | OpenAI 集成（选学） |
+| `@langchain/anthropic` | Anthropic 集成（选学） |
 
 后续各部分按需安装，见 [LEARNING.md · 依赖安装备忘](./LEARNING.md#依赖安装备忘)。
 
@@ -138,10 +142,11 @@ AI-LangChain/
 - [Build Overview](https://docs.langchain.com/build-overview)
 - [LangSmith](https://smith.langchain.com)
 - [LangSmith Remote MCP](https://docs.langchain.com/langsmith/langsmith-remote-mcp)
+- [Google AI Studio](https://aistudio.google.com/apikey)（Gemini API Key）
 - [TypeScript 文档入口](https://docs.langchain.com/oss/javascript/)
 
 ---
 
 ## 下一步
 
-**第 1 部分 · 1.2**：确认 `.env` 含模型 Key，理解 `createAgent`，详见 [LEARNING.md](./LEARNING.md)。
+**第 1 部分 · 1.2**：在 `.env` 填入 `GOOGLE_API_KEY`（[获取 Key](https://aistudio.google.com/apikey)），详见 [LEARNING.md](./LEARNING.md)。
