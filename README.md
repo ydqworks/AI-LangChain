@@ -11,13 +11,13 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 · Build LangChain |
-| **当前步骤** | 1.2 |
+| **当前步骤** | 1.4 |
 | **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 官网模块 | 状态 | 说明 |
 |:----:|------|---------|:----:|------|
 | 0 | 准备与认知 | 全平台 | ✅ 已完成 | 文档、环境、LangSmith、MCP |
-| 1 | Build — LangChain | Build | 🟨 进行中 | 第一个写代码的模块 |
+| 1 | Build — LangChain | Build | 🟨 进行中 | 1.1–1.3 已完成 |
 | 2 | Build — LangGraph | Build | ⬜ 未开始 | StateGraph、Checkpoint、HITL |
 | 3 | Build — Deep Agents | Build | ⬜ 未开始 | 规划、子 Agent、Skills |
 | 4 | Test 评估 | Test | ⬜ 未开始 | Dataset、Experiment |
@@ -63,7 +63,7 @@
 | Node.js 22+ | ✅ v22.14.0 |
 | 项目依赖 `npm install` | ✅ 已安装 |
 | LangSmith 账号 & API Key | ✅ 已配置 |
-| Google Gemini API Key | 待填入 `.env` 的 `GOOGLE_API_KEY` |
+| Google Gemini API Key | ✅ 已配置 |
 | `.env` 配置 | ✅ 已创建（勿提交 Git） |
 | LangSmith MCP（Cursor） | ✅ 已连接 |
 | 示例代码 `src/` | 待创建（第 1 部分起） |
@@ -149,4 +149,4 @@ AI-LangChain/
 
 ## 下一步
 
-**第 1 部分 · 1.2**：在 `.env` 填入 `GOOGLE_API_KEY`（[获取 Key](https://aistudio.google.com/apikey)），详见 [LEARNING.md](./LEARNING.md)。
+**第 1 部分 · 1.4**：完成 Quickstart 天气 Agent（Gemini），详见 [LEARNING.md](./LEARNING.md)。

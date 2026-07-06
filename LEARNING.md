@@ -19,7 +19,7 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 |
-| **当前步骤** | 1.2 |
+| **当前步骤** | 1.4 |
 | **开始日期** | 2026-07-06 |
 | **最近更新** | 2026-07-06 |
 
@@ -139,14 +139,14 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
   ```
   - 自检：能识别 `package.json` 新增项
 
-- [ ] **1.2** 确认 `.env` 含模型 Key（参考 `.env.example`，勿提交 Git）  
+- [x] **1.2** 确认 `.env` 含模型 Key（参考 `.env.example`，勿提交 Git）  
   ```
   LANGSMITH_TRACING=true
   LANGSMITH_API_KEY=lsv2_pt_...
   GOOGLE_API_KEY=...          # https://aistudio.google.com/apikey
   ```
 
-- [ ] **1.3** 阅读 Overview，理解 `createAgent` = Model + Tools + Middleware
+- [x] **1.3** 阅读 Overview，理解 `createAgent` = Model + Tools + Middleware
 
 - [ ] **1.4** 完成 Quickstart：天气 Agent（**Gemini**）  
   - 文档：[Quickstart](https://docs.langchain.com/oss/javascript/langchain/quickstart)  
@@ -332,4 +332,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.2**：在 `.env` 填入 `GOOGLE_API_KEY`（[aistudio.google.com/apikey](https://aistudio.google.com/apikey)）。
+**第 1 部分 · 步骤 1.4**：完成 Quickstart 天气 Agent（Gemini），产出 `src/01-langchain/01-weather-agent.ts`。
