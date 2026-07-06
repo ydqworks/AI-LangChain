@@ -10,14 +10,14 @@
 
 | 字段 | 值 |
 |------|-----|
-| **当前部分** | 第 0 部分 · 准备与认知 |
-| **当前步骤** | 0.4 |
+| **当前部分** | 第 1 部分 · Monitor 可观测性 |
+| **当前步骤** | 1.1 |
 | **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 状态 | 说明 |
 |:----:|------|:----:|------|
-| 0 | 准备与认知 | 🟨 进行中 | 0.1–0.3 已完成，笔记见 `notes/` |
-| 1 | Monitor 可观测性 | ⬜ 未开始 | Tracing、LangSmith |
+| 0 | 准备与认知 | ✅ 已完成 | 文档、环境、LangSmith、MCP |
+| 1 | Monitor 可观测性 | 🟨 进行中 | 第一个写代码的模块 |
 | 2 | LangChain 基础 | ⬜ 未开始 | `createAgent`、Tools、Middleware |
 | 3 | LangGraph 编排 | ⬜ 未开始 | StateGraph、Checkpoint、HITL |
 | 4 | Deep Agents | ⬜ 未开始 | 规划、子 Agent、Skills |
@@ -59,11 +59,11 @@
 
 | 项目 | 状态 |
 |------|:----:|
-| Node.js 22+ | 待确认（`node -v`） |
+| Node.js 22+ | ✅ v22.14.0 |
 | 项目依赖 `npm install` | ✅ 已安装 |
-| LangSmith 账号 & API Key | 待完成 |
-| `.env` 配置 | 待完成（参考 `.env.example`） |
-| LangSmith MCP（Cursor） | ✅ 已配置 `.cursor/mcp.json` |
+| LangSmith 账号 & API Key | ✅ 已配置 |
+| `.env` 配置 | ✅ 已创建（勿提交 Git） |
+| LangSmith MCP（Cursor） | ✅ 已连接 |
 | 示例代码 `src/` | 待创建（第 1 部分起） |
 
 ---
@@ -143,4 +143,4 @@ AI-LangChain/
 
 ## 下一步
 
-**第 0 部分 · 0.4**：检查本地开发环境（Node.js 22+、`npm install`、识别 `package.json` 依赖），详见 [LEARNING.md](./LEARNING.md)。
+**第 1 部分 · 1.1**：安装 `langsmith`、`openai` 及 TypeScript 开发依赖，详见 [LEARNING.md](./LEARNING.md)。

@@ -18,15 +18,15 @@
 
 | 字段 | 值 |
 |------|-----|
-| **当前部分** | 第 0 部分 |
-| **当前步骤** | 0.4 |
+| **当前部分** | 第 1 部分 |
+| **当前步骤** | 1.1 |
 | **开始日期** | 2026-07-06 |
 | **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 状态 |
 |------|------|------|
-| 0 | 准备与认知 | 🟨 进行中 |
-| 1 | Monitor 可观测性 | ⬜ 未开始 |
+| 0 | 准备与认知 | ✅ 已完成 |
+| 1 | Monitor 可观测性 | 🟨 进行中 |
 | 2 | LangChain 基础 | ⬜ 未开始 |
 | 3 | LangGraph 编排 | ⬜ 未开始 |
 | 4 | Deep Agents | ⬜ 未开始 |
@@ -87,30 +87,30 @@
   - 内容：应用 → Build 栈 → LangSmith 平台  
   - 产出：[notes/0.3-tech-stack-layers.md](./notes/0.3-tech-stack-layers.md)
 
-- [ ] **0.4** 检查本地开发环境  
+- [x] **0.4** 检查本地开发环境  
   - 要求：Node.js **22+**（`node -v`）  
   - 在本项目执行：`npm install`  
   - 自检：无报错，能识别 `package.json` 里已有哪些包
 
-- [ ] **0.5** 注册 LangSmith，完成 Onboarding（选 **Technical**）  
+- [x] **0.5** 注册 LangSmith，完成 Onboarding（选 **Technical**）  
   - 链接：[smith.langchain.com](https://smith.langchain.com)  
   - 产出：可登录的账号 + Workspace
 
-- [ ] **0.6** 创建 LangSmith API Key（Personal Access Token）  
+- [x] **0.6** 创建 LangSmith API Key（Personal Access Token）  
   - 路径：Settings → API Keys  
   - 产出：保存好 `lsv2_pt_...`（勿提交 Git）
 
-- [ ] **0.7**（推荐）配置 LangSmith Remote MCP（Cursor OAuth）  
+- [x] **0.7**（推荐）配置 LangSmith Remote MCP（Cursor OAuth）  
   - 文档：[LangSmith Remote MCP](https://docs.langchain.com/langsmith/langsmith-remote-mcp)  
   - 配置：`.cursor/mcp.json`  
   - 自检：Cursor MCP 设置中 LangSmith 显示已连接
 
 ### 第 0 部分完成标准
 
-- [ ] 能不看文档说出：平台五模块 + Build 三层框架
-- [ ] Node.js 22+、本项目依赖已安装
-- [ ] LangSmith 账号与 API Key 就绪
-- [ ] （推荐）LangSmith MCP 在 Cursor 中可用
+- [x] 能不看文档说出：平台五模块 + Build 三层框架
+- [x] Node.js 22+、本项目依赖已安装
+- [x] LangSmith 账号与 API Key 就绪
+- [x] （推荐）LangSmith MCP 在 Cursor 中可用
 
 **完成后**：将进度总览中第 0 部分改为 ✅，当前部分改为「第 1 部分 · 1.1」。
 
@@ -305,6 +305,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 0 部分 · 步骤 0.4**：检查本地开发环境（`node -v`、`npm install`、识别 `package.json` 依赖）。
-
-第 0 部分全部勾选完成后，再进入第 1 部分写代码。
+**第 1 部分 · 步骤 1.1**：安装 `langsmith`、`openai` 及 TypeScript 开发依赖，详见下方第 1 部分。
