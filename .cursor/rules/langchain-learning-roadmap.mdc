@@ -1,0 +1,28 @@
+---
+description: TypeScript 从 0 到 1 学习 LangChain 全栈；进度以 LEARNING.md 为准
+alwaysApply: true
+---
+
+# LangChain 学习路线（TypeScript · 0→1）
+
+依据 https://docs.langchain.com/。**进度以 `LEARNING.md` 为准**，用户自行勾选；协助时不跳级。
+
+## 当前默认进度
+
+- **第 0 部分 · 0.1**（用户未声明完成前，假定从零开始）
+- 第 1–7 部分均未开始
+
+## 学习顺序
+
+0 准备 → 1 Monitor → 2 LangChain → 3 LangGraph → 4 Deep Agents → 5 Test → 6 Deploy → 7 进阶
+
+Build 栈：`@langchain/core` → `@langchain/langgraph` → `langchain` → `deepagents`
+
+## 协助原则
+
+- 用户说「继续学习」时，先读 `LEARNING.md` 进度总览，只辅导**当前部分**未勾选项
+- 第 0 部分完成前：只帮读文档、环境检查、LangSmith 注册，不写 Agent 代码
+- 第 1 部分完成前：不写 LangChain `createAgent`
+- 只用 TypeScript 文档（`/oss/javascript/`）
+- 每步附官方链接 + 完成标准；代码放入 `src/0x-*/`
+- MCP：`.cursor/mcp.json` → `https://api.smith.langchain.com/mcp`（OAuth，第 0.7 步）

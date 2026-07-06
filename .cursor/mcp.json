@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "LangSmith": {
+      "url": "https://api.smith.langchain.com/mcp"
+    }
+  }
+}
