@@ -11,7 +11,7 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 · Build LangChain |
-| **当前步骤** | 1.1 |
+| **当前步骤** | 1.2 |
 | **最近更新** | 2026-07-06 |
 
 | 部分 | 名称 | 官网模块 | 状态 | 说明 |
@@ -144,4 +144,4 @@ AI-LangChain/
 
 ## 下一步
 
-**第 1 部分 · 1.1**：安装 `zod` 及 TypeScript 开发依赖，详见 [LEARNING.md](./LEARNING.md)。
+**第 1 部分 · 1.2**：确认 `.env` 含模型 Key，理解 `createAgent`，详见 [LEARNING.md](./LEARNING.md)。
