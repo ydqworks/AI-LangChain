@@ -1,6 +1,6 @@
 # AI-LangChain
 
-基于 [LangChain 官方文档](https://docs.langchain.com/) 的 **TypeScript** 学习仓库，按 Monitor → LangChain → LangGraph → Deep Agents 路线从 0 到 1 系统学习 Agent 工程。
+基于 [LangChain 官方文档](https://docs.langchain.com/) 的 **TypeScript** 学习仓库，按官网生命周期 **Build → Test → Deploy → Monitor → Govern** 从 0 到 1 系统学习 Agent 工程。
 
 详细学习清单与勾选进度见 **[LEARNING.md](./LEARNING.md)**。
 
@@ -10,39 +10,40 @@
 
 | 字段 | 值 |
 |------|-----|
-| **当前部分** | 第 1 部分 · Monitor 可观测性 |
+| **当前部分** | 第 1 部分 · Build LangChain |
 | **当前步骤** | 1.1 |
 | **最近更新** | 2026-07-06 |
 
-| 部分 | 名称 | 状态 | 说明 |
-|:----:|------|:----:|------|
-| 0 | 准备与认知 | ✅ 已完成 | 文档、环境、LangSmith、MCP |
-| 1 | Monitor 可观测性 | 🟨 进行中 | 第一个写代码的模块 |
-| 2 | LangChain 基础 | ⬜ 未开始 | `createAgent`、Tools、Middleware |
-| 3 | LangGraph 编排 | ⬜ 未开始 | StateGraph、Checkpoint、HITL |
-| 4 | Deep Agents | ⬜ 未开始 | 规划、子 Agent、Skills |
-| 5 | Test 评估 | ⬜ 未开始 | Dataset、Experiment |
-| 6 | Deploy 部署 | ⬜ 未开始 | LangGraph CLI、Agent Server |
-| 7 | 进阶（可选） | ⬜ 未开始 | Govern、Engine、Fleet |
+| 部分 | 名称 | 官网模块 | 状态 | 说明 |
+|:----:|------|---------|:----:|------|
+| 0 | 准备与认知 | 全平台 | ✅ 已完成 | 文档、环境、LangSmith、MCP |
+| 1 | Build — LangChain | Build | 🟨 进行中 | 第一个写代码的模块 |
+| 2 | Build — LangGraph | Build | ⬜ 未开始 | StateGraph、Checkpoint、HITL |
+| 3 | Build — Deep Agents | Build | ⬜ 未开始 | 规划、子 Agent、Skills |
+| 4 | Test 评估 | Test | ⬜ 未开始 | Dataset、Experiment |
+| 5 | Deploy 部署 | Deploy | ⬜ 未开始 | LangGraph CLI、Agent Server |
+| 6 | Monitor 可观测性 | Monitor | ⬜ 未开始 | Tracing、Prompt Hub |
+| 7 | 进阶（可选） | Govern 等 | ⬜ 未开始 | Engine、Fleet |
 
 > 状态图例：⬜ 未开始 · 🟨 进行中 · ✅ 已完成
 
 ### 路线图
 
+与 [docs.langchain.com](https://docs.langchain.com/) 首页横向顺序一致：
+
 ```
-第 0 部分  准备（读文档、搭环境）
+官网：  Build  →  Test  →  Deploy  →  Monitor  →  Govern
+
+本仓库：
+第 0 部分  准备
     ↓
-第 1 部分  Monitor — 追踪与调试
+第 1–3 部分  Build（LangChain → LangGraph → Deep Agents）
     ↓
-第 2 部分  LangChain — createAgent
+第 4 部分  Test
     ↓
-第 3 部分  LangGraph — StateGraph
+第 5 部分  Deploy
     ↓
-第 4 部分  Deep Agents — 复杂任务
-    ↓
-第 5 部分  Test — 评估与 Prompt
-    ↓
-第 6 部分  Deploy — 部署上线
+第 6 部分  Monitor
     ↓
 第 7 部分  进阶（可选）
 ```
@@ -83,7 +84,7 @@ cd AI-LangChain
 npm install
 ```
 
-### 3. 配置环境变量（第 1 部分起需要）
+### 3. 配置环境变量（第 0 部分已完成可跳过）
 
 ```bash
 cp .env.example .env
@@ -104,10 +105,10 @@ AI-LangChain/
 ├── notes/                  # 第 0 部分笔记
 │   └── 0.3-tech-stack-layers.md
 ├── src/                    # 学习示例（随进度创建）
-│   ├── 01-tracing/         # 第 1 部分
-│   ├── 02-langchain/       # 第 2 部分
-│   ├── 03-langgraph/       # 第 3 部分
-│   └── 04-deepagents/      # 第 4 部分
+│   ├── 01-langchain/       # 第 1 部分
+│   ├── 02-langgraph/       # 第 2 部分
+│   ├── 03-deepagents/      # 第 3 部分
+│   └── 06-monitor/         # 第 6 部分
 ├── .env.example            # 环境变量模板
 ├── LEARNING.md             # 详细学习计划与勾选清单
 ├── package.json
@@ -143,4 +144,4 @@ AI-LangChain/
 
 ## 下一步
 
-**第 1 部分 · 1.1**：安装 `langsmith`、`openai` 及 TypeScript 开发依赖，详见 [LEARNING.md](./LEARNING.md)。
+**第 1 部分 · 1.1**：安装 `zod` 及 TypeScript 开发依赖，详见 [LEARNING.md](./LEARNING.md)。
