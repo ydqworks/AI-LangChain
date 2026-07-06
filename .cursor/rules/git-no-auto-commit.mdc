@@ -1,5 +1,5 @@
 ---
-description: Git 须人工下令才提交；commit 描述使用中文
+description: Git 须人工下令才提交；commit 用中文，提交后自动 push
 alwaysApply: true
 ---
 
@@ -16,11 +16,21 @@ alwaysApply: true
 仅在用户**明确**要求时才执行提交相关操作，例如：
 
 - 「提交」「commit」「帮我提交」
-- 「推送到 GitHub」「git push」
+- 「推送到 GitHub」「git push」（仅推送，见下文）
 
 若意图不清（如只说「保存一下」），先确认是否指 Git 提交，**不要**擅自 commit。
 
-用户未要求 push 时，**只 commit，不 push**。
+## 提交后自动推送
+
+用户要求**提交**时，按顺序执行：
+
+1. `git add`（相关文件）
+2. `git commit`（中文 message，见下节）
+3. `git push`（推送到 `origin` 当前分支）
+
+无需用户再单独说「推送」。若工作区无变更，告知用户并跳过 commit；若已有 commit 未推送，可直接 `git push`。
+
+用户**仅**说「推送」「推送到 GitHub」且未要求提交时，只执行 `git push`，不新建 commit。
 
 ## Commit 描述规范（中文）
 
@@ -47,17 +57,17 @@ alwaysApply: true
 ## 允许的操作（无需用户下令）
 
 - `git status`、`git diff`、`git log` 等只读查看
-- 用户已要求提交时，按上述规范撰写中文 commit message
+- 用户已要求提交时，按上述规范撰写中文 commit message 并完成 push
 
 ## 示例
 
 ```
 用户：完善 README
-→ 只改文件，不 commit
+→ 只改文件，不 commit、不 push
 
 用户：提交
-→ git add + commit，message 用中文；不 push
+→ git add + commit（中文 message）+ git push
 
 用户：推送到 GitHub
-→ git push
+→ 仅 git push（不新建 commit）
 ```
