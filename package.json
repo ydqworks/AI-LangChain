@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "weather-agent": "tsx --env-file=.env src/01-langchain/01-weather-agent.ts"
+  },
   "dependencies": {
     "@langchain/anthropic": "^1.5.1",
     "@langchain/core": "^1.2.1",

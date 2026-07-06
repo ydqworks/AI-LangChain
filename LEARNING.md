@@ -19,7 +19,7 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 |
-| **当前步骤** | 1.4 |
+| **当前步骤** | 1.5 |
 | **开始日期** | 2026-07-06 |
 | **最近更新** | 2026-07-06 |
 
@@ -148,10 +148,11 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 
 - [x] **1.3** 阅读 Overview，理解 `createAgent` = Model + Tools + Middleware
 
-- [ ] **1.4** 完成 Quickstart：天气 Agent（**Gemini**）  
+- [x] **1.4** 完成 Quickstart：天气 Agent（**Gemini**）  
   - 文档：[Quickstart](https://docs.langchain.com/oss/javascript/langchain/quickstart)  
   - 模型：`google-genai:gemini-2.5-flash-lite`  
-  - 产出：`src/01-langchain/01-weather-agent.ts`
+  - 产出：`src/01-langchain/01-weather-agent.ts`  
+  - 运行：`npm run weather-agent`
 
 - [ ] **1.5** 编写自定义 Tool（`zod`）  
   - 产出：`src/01-langchain/02-custom-tools.ts`
@@ -165,8 +166,8 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 
 ### 第 1 部分完成标准
 
-- [ ] `createAgent` 能调用自定义 tool
-- [ ] 本地示例可运行（`.env` 中 `LANGSMITH_TRACING=true` 时 LangSmith 可有自动 trace，第 6 部分再系统学习）
+- [x] `createAgent` 能调用自定义 tool
+- [x] 本地示例可运行（`.env` 中 `LANGSMITH_TRACING=true` 时 LangSmith 可有自动 trace，第 6 部分再系统学习）
 
 ---
 
@@ -332,4 +333,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.4**：完成 Quickstart 天气 Agent（Gemini），产出 `src/01-langchain/01-weather-agent.ts`。
+**第 1 部分 · 步骤 1.5**：编写自定义 Tool，产出 `src/01-langchain/02-custom-tools.ts`。
