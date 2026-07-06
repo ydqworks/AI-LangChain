@@ -1,0 +1,41 @@
+---
+description: 禁止智能体主动 git commit；仅用户明确下令时才可提交
+alwaysApply: true
+---
+
+# Git 提交策略
+
+## 禁止主动提交
+
+- **不要**在完成代码、文档或配置修改后自动执行 `git add`、`git commit` 或 `git push`
+- **不要**在任务结束时主动询问「是否需要提交」并自行发起提交
+- **不要**将「帮你提交并推送」作为默认收尾步骤
+
+## 仅在用户明确下令时提交
+
+仅在用户**明确**要求时才执行 Git 提交相关操作，例如：
+
+- 「提交」「commit」「帮我提交」
+- 「推送到 GitHub」「git push」
+- 「创建 commit」
+
+若意图不清（如只说「保存一下」），先确认是否指 Git 提交，**不要**擅自 commit。
+
+## 允许的操作（无需用户下令）
+
+- `git status`、`git diff`、`git log` 等只读查看
+- 协助编写 commit message（在用户已要求提交的前提下）
+- 提醒用户可自行提交（一句即可，不主动执行）
+
+## 示例
+
+```
+用户：完善 README
+→ 只改文件，不 commit
+
+用户：提交 README 的修改
+→ 可执行 git add / commit（用户未要求 push 则不 push）
+
+用户：推送到 GitHub
+→ 可执行 git push
+```
