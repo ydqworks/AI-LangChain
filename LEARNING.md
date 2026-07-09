@@ -19,9 +19,9 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 |
-| **当前步骤** | 1.5 |
+| **当前步骤** | 1.6 |
 | **开始日期** | 2026-07-06 |
-| **最近更新** | 2026-07-06 |
+| **最近更新** | 2026-07-09 |
 
 | 部分 | 名称 | 对应官网模块 | 状态 |
 |------|------|-------------|------|
@@ -154,8 +154,13 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
   - 产出：`src/01-langchain/01-weather-agent.ts`  
   - 运行：`npm run weather-agent`
 
-- [ ] **1.5** 编写自定义 Tool（`zod`）  
-  - 产出：`src/01-langchain/02-custom-tools.ts`
+- [x] **1.5** Build a real-world agent（Quickstart 文学研究 Agent）  
+  - 文档：[Quickstart · Build a real-world agent](https://docs.langchain.com/oss/javascript/langchain/quickstart#build-a-real-world-agent)  
+  - 依赖：`npm i @langchain/langgraph`（`MemorySaver` checkpointer）  
+  - 模型：`initChatModel` + `google-genai:gemini-2.5-flash-lite`  
+  - 产出：`src/01-langchain/02-research-agent.ts`  
+  - 运行：`npm run research-agent`  
+  - 自检：理解 systemPrompt、async tool、模型配置、checkpointer + `thread_id`
 
 - [ ] **1.6** 了解其他模型集成（选学：`@langchain/openai`、`@langchain/anthropic`）
 
@@ -323,7 +328,7 @@ AI-LangChain/
 | 部分 | 命令 |
 |------|------|
 | 0 | `npm install`（已有 langchain 相关包即可） |
-| 1 | `npm i zod @langchain/google-genai` + `npm i -D typescript tsx @types/node` |
+| 1 | `npm i zod @langchain/google-genai @langchain/langgraph` + `npm i -D typescript tsx @types/node` |
 | 2 | `npm i @langchain/langgraph` |
 | 3 | `npm i deepagents` |
 | 5 | `npm i -D @langchain/langgraph-cli`（按需） |
@@ -333,4 +338,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.5**：编写自定义 Tool，产出 `src/01-langchain/02-custom-tools.ts`。
+**第 1 部分 · 步骤 1.6**：了解其他模型集成（选学），或继续 **1.7 Middleware**。
