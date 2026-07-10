@@ -68,7 +68,7 @@ your available tools and reasoning, do not fabricate numbers: use \`null\` for t
 the limitation in \`how_you_computed_counts\`. If you encounter any errors please report what the error was and what the error message was.`;
 
 async function main() {
-  const model = await initChatModel("gemini-2.5-flash-lite", {
+  const model = await initChatModel("gemini-3.1-flash-lite", {
     modelProvider: "google-genai",
     temperature: 0.5,
     timeout: 600_000,

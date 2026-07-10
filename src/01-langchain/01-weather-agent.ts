@@ -19,7 +19,7 @@ const getWeather = tool(
 );
 
 const agent = createAgent({
-  model: "google-genai:gemini-2.5-flash-lite",
+  model: "google-genai:gemini-3.1-flash-lite",
   tools: [getWeather],
 });
 

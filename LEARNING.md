@@ -150,14 +150,14 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 
 - [x] **1.4** 完成 Quickstart：天气 Agent（**Gemini**）  
   - 文档：[Quickstart](https://docs.langchain.com/oss/javascript/langchain/quickstart)  
-  - 模型：`google-genai:gemini-2.5-flash-lite`  
+  - 模型：`google-genai:gemini-3.1-flash-lite`  
   - 产出：`src/01-langchain/01-weather-agent.ts`  
   - 运行：`npm run weather-agent`
 
 - [x] **1.5** Build a real-world agent（Quickstart 文学研究 Agent）  
   - 文档：[Quickstart · Build a real-world agent](https://docs.langchain.com/oss/javascript/langchain/quickstart#build-a-real-world-agent)  
   - 依赖：`npm i @langchain/langgraph`（`MemorySaver` checkpointer）  
-  - 模型：`initChatModel` + `google-genai:gemini-2.5-flash-lite`  
+  - 模型：`initChatModel` + `google-genai:gemini-3.1-flash-lite`  
   - 产出：`src/01-langchain/02-research-agent.ts`  
   - 运行：`npm run research-agent`  
   - 自检：理解 systemPrompt、async tool、模型配置、checkpointer + `thread_id`
