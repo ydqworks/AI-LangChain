@@ -180,8 +180,8 @@ Build 阶段可用 `.env` 中 `LANGSMITH_TRACING=true` 产生自动 trace；**Mo
 | Agent / Tools / Model | ✅ 1.4–1.5 |
 | 其他模型集成（选学） | ⬜ 1.6 |
 | Middleware | ✅ 1.7 |
-| RAG / Retrieval | 🟨 1.8 |
-| LangGraph 编排 | 第 2 部分 |
+| RAG / Retrieval | ✅ 1.8（2-Step RAG） |
+| LangGraph 编排 | 第 2 部分 · 2.1 ← 当前 |
 | Deep Agents | 第 3 部分 |
 | 系统学 Trace | 第 6 部分 |
 

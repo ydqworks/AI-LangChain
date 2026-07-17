@@ -18,16 +18,16 @@
 
 | 字段 | 值 |
 |------|-----|
-| **当前部分** | 第 1 部分 |
-| **当前步骤** | 1.8 |
+| **当前部分** | 第 2 部分 |
+| **当前步骤** | 2.1 |
 | **开始日期** | 2026-07-06 |
 | **最近更新** | 2026-07-17 |
 
 | 部分 | 名称 | 对应官网模块 | 状态 |
 |------|------|-------------|------|
 | 0 | 准备与认知 | 全平台认知 | ✅ 已完成 |
-| 1 | Build — LangChain | Build | 🟨 进行中 |
-| 2 | Build — LangGraph | Build | ⬜ 未开始 |
+| 1 | Build — LangChain | Build | ✅ 已完成 |
+| 2 | Build — LangGraph | Build | 🟨 进行中 |
 | 3 | Build — Deep Agents | Build | ⬜ 未开始 |
 | 4 | Test 评估 | Test | ⬜ 未开始 |
 | 5 | Deploy 部署 | Deploy | ⬜ 未开始 |
@@ -167,17 +167,19 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 - [x] **1.7** 学习 Middleware（重试、guardrails）  
   - 产出：`src/01-langchain/03-middleware.ts`
 
-- [ ] **1.8**（选学）RAG 入门  
+- [x] **1.8**（选学）RAG 入门  
   - 文档：[Retrieval](https://docs.langchain.com/oss/javascript/langchain/retrieval) · [Semantic search / Knowledge base](https://docs.langchain.com/oss/javascript/langchain/knowledge-base) · [MemoryVectorStore](https://docs.langchain.com/oss/javascript/integrations/vectorstores/memory) · [Google Embeddings](https://docs.langchain.com/oss/javascript/integrations/embeddings/google_generative_ai)  
   - 依赖：`npm i @langchain/classic @langchain/textsplitters`（`GoogleGenerativeAIEmbeddings` 已在 `@langchain/google-genai`）  
   - 产出：`src/01-langchain/04-rag.ts`  
   - 运行：`npm run rag`  
-  - 自检：能说出 Index → Retrieve → Generate；理解 chunk / embedding / vector store / retriever
+  - 自检：能说出 Index → Retrieve → Generate；理解 chunk / embedding / vector store / retriever；`04-rag.ts` 为 **2-Step RAG**
 
 ### 第 1 部分完成标准
 
 - [x] `createAgent` 能调用自定义 tool
 - [x] 本地示例可运行（`.env` 中 `LANGSMITH_TRACING=true` 时 LangSmith 可有自动 trace，第 6 部分再系统学习）
+
+**完成后**：将进度总览中第 1 部分改为 ✅，当前部分改为「第 2 部分 · 2.1」。
 
 ---
 
@@ -343,4 +345,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.8**：RAG 入门（选学）——跑通 `npm run rag`，理解检索增强生成流水线。
+**第 2 部分 · 步骤 2.1**：安装 / 确认 `@langchain/langgraph`，阅读 [LangGraph Overview (JS)](https://docs.langchain.com/oss/javascript/langgraph/overview)，准备 Hello World StateGraph。
