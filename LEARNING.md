@@ -19,9 +19,9 @@
 | 字段 | 值 |
 |------|-----|
 | **当前部分** | 第 1 部分 |
-| **当前步骤** | 1.6 |
+| **当前步骤** | 1.8 |
 | **开始日期** | 2026-07-06 |
-| **最近更新** | 2026-07-09 |
+| **最近更新** | 2026-07-17 |
 
 | 部分 | 名称 | 对应官网模块 | 状态 |
 |------|------|-------------|------|
@@ -164,10 +164,15 @@ Build  →  Test  →  Deploy  →  Monitor  →  Govern
 
 - [ ] **1.6** 了解其他模型集成（选学：`@langchain/openai`、`@langchain/anthropic`）
 
-- [ ] **1.7** 学习 Middleware（重试、guardrails）  
+- [x] **1.7** 学习 Middleware（重试、guardrails）  
   - 产出：`src/01-langchain/03-middleware.ts`
 
-- [ ] **1.8**（选学）RAG 入门
+- [ ] **1.8**（选学）RAG 入门  
+  - 文档：[Retrieval](https://docs.langchain.com/oss/javascript/langchain/retrieval) · [Semantic search / Knowledge base](https://docs.langchain.com/oss/javascript/langchain/knowledge-base) · [MemoryVectorStore](https://docs.langchain.com/oss/javascript/integrations/vectorstores/memory) · [Google Embeddings](https://docs.langchain.com/oss/javascript/integrations/embeddings/google_generative_ai)  
+  - 依赖：`npm i @langchain/classic @langchain/textsplitters`（`GoogleGenerativeAIEmbeddings` 已在 `@langchain/google-genai`）  
+  - 产出：`src/01-langchain/04-rag.ts`  
+  - 运行：`npm run rag`  
+  - 自检：能说出 Index → Retrieve → Generate；理解 chunk / embedding / vector store / retriever
 
 ### 第 1 部分完成标准
 
@@ -328,7 +333,7 @@ AI-LangChain/
 | 部分 | 命令 |
 |------|------|
 | 0 | `npm install`（已有 langchain 相关包即可） |
-| 1 | `npm i zod @langchain/google-genai @langchain/langgraph` + `npm i -D typescript tsx @types/node` |
+| 1 | `npm i zod @langchain/google-genai @langchain/langgraph` + `npm i -D typescript tsx @types/node`；1.8 RAG 另需 `npm i @langchain/classic @langchain/textsplitters` |
 | 2 | `npm i @langchain/langgraph` |
 | 3 | `npm i deepagents` |
 | 5 | `npm i -D @langchain/langgraph-cli`（按需） |
@@ -338,4 +343,4 @@ AI-LangChain/
 
 ## 你现在应该做什么
 
-**第 1 部分 · 步骤 1.6**：了解其他模型集成（选学），或继续 **1.7 Middleware**。
+**第 1 部分 · 步骤 1.8**：RAG 入门（选学）——跑通 `npm run rag`，理解检索增强生成流水线。

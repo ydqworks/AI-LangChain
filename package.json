@@ -1,14 +1,17 @@
 {
   "scripts": {
     "weather-agent": "tsx --env-file=.env src/01-langchain/01-weather-agent.ts",
-    "research-agent": "tsx --env-file=.env src/01-langchain/02-research-agent.ts"
+    "research-agent": "tsx --env-file=.env src/01-langchain/02-research-agent.ts",
+    "rag": "tsx --env-file=.env src/01-langchain/04-rag.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.5.1",
+    "@langchain/classic": "^1.0.40",
     "@langchain/core": "^1.2.1",
     "@langchain/google-genai": "^2.2.0",
     "@langchain/langgraph": "^1.4.7",
     "@langchain/openai": "^1.5.3",
+    "@langchain/textsplitters": "^1.0.1",
     "langchain": "^1.5.2",
     "zod": "^4.4.3"
   },
